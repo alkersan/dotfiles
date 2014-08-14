@@ -1,0 +1,12 @@
+#!/bin/sh -xe
+
+declare -r dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
+ln -s -T --force $dir/prezto                $HOME/.zprezto
+ln -s --force $dir/prezto/runcoms/zshrc     $HOME/.zshrc
+ln -s --force $dir/prezto/runcoms/zshenv    $HOME/.zshenv
+ln -s --force $dir/prezto/runcoms/zpreztorc $HOME/.zpreztorc
+ln -s --force $dir/prezto/runcoms/zprofile  $HOME/.zprofile
+
+ln -s -T --force $dir/vim                   $HOME/.vim
+ln -s --force $dir/vimrc                    $HOME/.vimrc
